@@ -11,6 +11,8 @@ describe('Loan Bidding Site Automation', () => {
         cy.wait(2000);
 
         cy.get('input[value="Debt Consolidation"]').click();
+        cy.wait(2000);
+        
         cy.get('input[name="annual_income"]').type('65000');
         cy.get('input[value="Bi-Weekly"]').click();
         cy.get('.step3 > .fieldset-content > .next-step').click({force: true});
